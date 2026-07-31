@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <p>Este é um exemplo de página com JavaScript.</p>
+
+        <form>
+            <p>Digite seu nome: <input type="text" name="nome"> <input type="submit" value="Enviar" id="jsSubmit"></p>
+            <script>
+                document.getElementById("jsSubmit").addEventListener("click", function(event) {
+                    event.preventDefault(); // Evita o envio do formulário
+                    var nome = document.getElementsByName("nome")[0].value;
+                    alert("Olá, " + nome + "!");
+                });
+            </script>
+        </form>
+    </body>
+</html>
