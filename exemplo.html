@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <label for="nome">Nome:</label> <!-- Rótulo para o campo de nome, usado para identificar o campo. -->
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <h1 id="titulo-principal">Menu</h1>
+        <h2 id="subtitulo-secao">Selecione uma opção</h2>
+        <form action="processar_formulario.php" method="post">
+        <h3>
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label> 
+            <input type="email" class="form-control" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea class="form-control" style="width: 100%;" background-color: #f0f0f0; color: #333;" id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+
+        </h3>
+    </body>
+</html>

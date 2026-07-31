@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head> <!-- Cabeçalho da página, contém informações sobre o documento. Essa parte define o conjunto de caracteres, a viewport e o título da página. Não aparece na página, mas é importante para o funcionamento correto do documento. -->
+        <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, que suporta a maioria dos caracteres e símbolos usados na web. Resolve o problema de acentuação e outros caracteres especiais da página. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Primeiro HTML</title>
+    </head>
+    <body> <!-- Corpo da página, contém o conteúdo visível da página. Essa parte é onde você coloca o que deseja exibir para os visitantes do site. -->
+        <!-- Este é o título principal da página -->
+        <h1> 
+            Olá, Mundo!
+        </h1> <!-- Título principal da página, usado para destacar o conteúdo mais importante. Utilizar apenas uma vez por página. Deve ser o título mais importante da página, que chame atenção dos visitantes. Implica nos cliques do Google. -->
+        <!-- Fim do título principal -->
+        <h2> Olá, Mundo!</h2> <!-- Título secundário da página, usado para destacar o conteúdo importante. -->
+        <h3> Olá, Mundo!</h3> <!-- Título terciário da página, usado para destacar o conteúdo menos importante. -->
+        <h4> Olá, Mundo!</h4> <!-- Título quádruplo da página, usado para destacar o conteúdo ainda menos importante. -->
+        <h5> Olá, Mundo!</h5> <!-- Título quíntuplo da página, usado para destacar o conteúdo ainda menos importante. -->
+        <h6> Olá, Mundo!</h6> <!-- Título séxtuplo da página, usado para destacar o conteúdo ainda menos importante. Conteúdo menos importante da página  . -->
+        <p>Este é o meu primeiro arquivo HTML.</p> <!-- Parágrafo da página, usado para exibir textos grandes. -->
+        <p>Este é o meu primeiro arquivo HTML.</p> <!-- Parágrafo da página, usado para exibir textos grandes. -->
+        <p>Este é o meu primeiro arquivo HTML.</p> <!-- Parágrafo da página, usado para exibir textos grandes. -->
+        <a href="https://www.google.com">Clique aqui para ir para o Google</a><br> <!-- Link da página, usado para redirecionar o usuário para outra página. -->
+        <a href="exemplo.html">Clique aqui para ir para o Exemplo</a> <!-- Link da página, usado para redirecionar o usuário para outra página. -->
+        <p>Este link leva para o Google: <a href="https://www.google.com">Acessar</a></p>
+        <p>Esta palavra ficará em negrito: <strong>negrito</strong></p> <!-- <b> -->
+        <p>Esta palavra ficará em itálico: <em>itálico</em></p> <!-- <i> -->
+        <p>Esta palavra ficará sublinhada: <u>sublinhado</u></p> <!-- <u> -->
+        <p>Esta palavra ficará riscada: <s>riscado</s></p> <!-- <s> -->
+        <p>Esta palavra ficará em destaque: <mark>destaque</mark></p> <!-- <mark> -->
+        <p>Esta palavra ficará em código: <code>código</code></p> <!-- <code> -->
+        <p>Esta palavra ficará em citação: <q>citação</q></p> <!-- <q> -->
+        <p>Esta palavra ficará em citação de bloco:         
+            <blockquote>
+                citação de bloco
+            </blockquote> <!-- para saber que posso organizar deste jeito, para ficar mais fácil de outro programador entender-->
+        </p> <!-- <blockquote> -->
+        <p>Esta palavra ficará em citação de bloco: <blockquote cite="https://www.google.com">citação de bloco</blockquote></p> <!-- <blockquote cite="URL"> -->
+        <p>Esta palavra ficará subscrita: <sub>subscrito</sub></p> <!-- <sub> -->
+        <p>Esta palavra ficará sobrescrita: <sup>sobrescrito</sup></p> <!-- <sup> -->
+        <!-- Comentário da página, usada para adicionar notas que não aparecem na página, mas ajudam a outros programadores a entender o código.. Usado também para separar blocos de código, como o titulo mais importante, o corpo, o rodapé -->
+        <img src="imagens/gatinhosfofos.jpg" alt="Gatinhos fofos" width="300"> <!-- Imagem da página, usada para exibir imagens.ALT precisa ser inserido. -->
+        <img src="imagens/gatinhosfofos.jpg" alt="Gatinhos fofos" width="300" style="border-radius: 5px; border: 3px solid white;"> <!-- Imagem da página, usada para exibir imagens. -->
+        <style>
+            body {
+                background-color: #ffafee; /* Cor de fundo da página */
+                color: #333; /* Cor do texto */
+                font-family: Arial, sans-serif; /* Fonte do texto */
+            }
+            h1 {
+                color: #ff6600; /* Cor do título principal */
+            }
+            a {
+                color: #0066cc; /* Cor dos links */
+                text-decoration: none; /* Remove o sublinhado dos links */
+            }
+            a:hover {
+                text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+            }
+        </style>
+        <h1>Acentuação</h1>
+        <p>Este é o meu primeiro arquivo HTML com acentuação.</p>
+        <h1>Tables</h1>
+        <table border="2px"> <!-- Tabela da página, usada para exibir dados em formato tabular. -->
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+            <tr> <style>tr:nth-child(even) {background-color: #d65d5d;}</style> <!-- Adiciona uma cor de fundo diferente para as linhas pares da tabela, melhorando a legibilidade. -->
+                <td>João</td>
+                <td>25</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>28</td>
+                <td>Belo Horizonte</td>
+            </tr>
+        </table>
+        <h1>Listas</h1>
+        <h2>Lista ordenada</h2>
+        <ol> <!-- Lista ordenada da página, usada para exibir itens em uma ordem específica. -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <h2>Lista não ordenada</h2>
+        <ul> <!-- Lista não ordenada da página, usada para exibir itens sem uma ordem específica. -->
+            <li><a href="item1.html">Item 1</a></li> <!-- Link para o item 1, lista com links -->
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h1>Formulários</h1>
+        <form action="processar_formulario.php" method="post"> <!-- Formulário da página, usado para coletar informações do usuário. -->
+            <div>
+                <label for="nome">Nome:</label> <!-- Rótulo para o campo de nome, usado para identificar o campo. -->
+            </div>
+            <div>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br> <!-- Campo de texto para o usuário digitar o nome. -->
+            </div>
+            <div>
+                <label for="email">Email:</label> <!-- Rótulo para o campo de email, usado para identificar o campo. -->
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br> <!-- Campo de email para o usuário digitar o email. -->
+            </div>
+            <div>
+                <input type="submit" value="Enviar"> <!-- Botão de envio do formulário. -->
+            </div>
+        
+        <h1 id="titulo-principal">Formulário de Contato</h1>
+        <h2 id="subtitulo-secao">Preencha os campos abaixo</h2>
+        <form action="processar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label> 
+            <style>
+                .form-control {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #cc5353;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            </style>
+            <input type="email" class="form-control" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea class="form-control" style="width: 100%;" background-color: #f0f0f0; color: #333;" id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+
+            <!-- Todo id é único e deve ser usado para identificar elementos na página. Já o class é usado para aplicar estilos CSS a múltiplos elementos, pode se repetir -->
+
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+            <div id="item-unico">Item Único</div>
+            <style>
+                .item {
+                    background-color: #f0f0f0;
+                    color: #333;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+                #item-unico {
+                    background-color: #d65d5d;
+                    color: #fff;
+                    padding: 10px;
+                }
+            </style>
+        </form>
+    </body>
+</html>
